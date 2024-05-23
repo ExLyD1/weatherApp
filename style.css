@@ -46,9 +46,69 @@ body{
   border: none;
 }
 
+
+.searchResult{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.imgHolderMain{
+  height: 150px;
+  width: 100px;
+}
+.imgHolderMain img{
+  width: 100%;
+  height: 100%;
+}
+.temperature{
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  padding-top: 20px;
+}
+.city{
+  text-align: center;
+  font-size: 25px;
+  padding-top: 35px;
+}
+.weather{
+  text-align: center;
+  font-size: 23px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.swiper{
+  width: 100%;
+  height: 250px;
+  user-select: none;
+}
+.infoHolder{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.searchResult{
+  display: none;
+}
+
+
 @media screen and (max-width:1300px) {
   .container{
     width: 30%;
+  }
+  .swiper{
+    height: 400px;
   }
 }
 @media screen and (max-width:800px) {
@@ -63,53 +123,11 @@ body{
   .butt{
     width: 50%;
   }
-}
-.searchResult{
-  width: 100%;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
-.imgHolderMain{
-  height: 70px;
-  width: 30%;
-}
-.temperature{
-  font-size: 40px;
-  text-align: center;
-  padding-top: 30px;
-  padding-top: 20px;
-}
-.city{
-  text-align: center;
-  font-size: 25px;
-}
-.weather{
-  text-align: center;
-  font-size: 23px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-img{
-  width: 100%;
-  height: 100%;
-}
-.swiper{
-  width: 100%;
-  height: 150px;
-  user-select: none;
-}
-.infoHolder{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.searchResult{
-  display: none;
+  .imgHolder{
+    width: 50px;
+    height: 50px;
+  }
+  .imgHolder img{
+    width: 100%;
+  }
 }
