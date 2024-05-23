@@ -58,7 +58,7 @@ let lonFromData = null;
 
 
 async function getLocation(city) {
-  await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`)
+  await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
       errorField.textContent = ''
